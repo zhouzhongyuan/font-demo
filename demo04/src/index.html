@@ -1,0 +1,59 @@
+<html>
+<head>
+    <header name="Access-Control-Allow-Origin" value="https://mdn.mozillademos.org"/>
+    <title>Web Font Sample</title>
+    <style type="text/css" media="screen, print">
+        @font-face {
+            font-family: "Chekiang Sung";
+            src: url("Chekiang_Sung.ttf");  /*完整字库*/
+        }
+
+        #ttf {
+            font-weight: 200;
+            font-family: 'Chekiang Sung', SimSun, 宋体, serif;
+            font-feature-settings: 'vert' 1;
+            font-size: 24px;
+
+        }
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Material Icons'),
+            local('MaterialIcons-Regular'),
+            url(MaterialIcons-Regular.ttf) format('truetype');
+        }
+
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;  /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
+
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
+
+            /* Support for IE. */
+            font-feature-settings: 'liga';
+        }
+    </style>
+</head>
+<body>
+<p id="ttf"> 燕子去了，</br>有再来的时候，</br>杨柳枯了，</br>有再青的时候</br></p>
+<p>上述，字体是浙江民间宋体。</p>
+<i class="material-icons">face</i>
+<i class="material-icons">&#xE87C;</i>
+</body>
+</html>

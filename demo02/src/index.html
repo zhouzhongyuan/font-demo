@@ -1,0 +1,25 @@
+<html>
+<head>
+    <header name="Access-Control-Allow-Origin" value="https://mdn.mozillademos.org"/>
+    <title>Web Font Sample</title>
+    <style type="text/css" media="screen, print">
+        @font-face {
+            font-family: "Chekiang Sung";
+            src: url("Chekiang_Sung.ttf");  /*完整字库*/
+            src: url("../dest/font/Chekiang_Sung.ttf"); /*部分字库*/
+        }
+
+        #ttf {
+            font-weight: 200;
+            font-family: 'Chekiang Sung', SimSun, 宋体, serif;
+            font-feature-settings: 'vert' 1;
+            font-size: 24px;
+
+        }
+    </style>
+</head>
+<body>
+<p id="ttf"> 燕子去了，</br>有再来的时候，</br>杨柳枯了，</br>有再青的时候</br></p>
+<p>上述，字体是浙江民间宋体。</p>
+</body>
+</html>
